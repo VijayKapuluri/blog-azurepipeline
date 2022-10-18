@@ -1,3 +1,4 @@
+
 stages:
 - stage: 'Build_Stage'
   displayName: 'Build_Stage'
@@ -15,5 +16,3 @@ stages:
     displayName: 'Use DOtnet Core SDK'
     inputs:
       version:3.x
-
-      
