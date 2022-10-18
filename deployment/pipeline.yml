@@ -1,0 +1,19 @@
+stages:
+- stage: 'Build_Stage'
+  displayName: 'Build_Stage'
+
+
+  jobs:
+  -job: 'Build_Job'
+   displayName: 'Application 'Build_Job'
+
+   pool:
+     vmImage: 'windows-latest'
+
+   steps:
+   -task: DotNetCoreInstaller@1
+    displayName: 'Use DOtnet Core SDK'
+    inputs:
+      version:3.x
+
+      
